@@ -3,7 +3,7 @@ name: "chatops.hetzner_get_servers_info"
 action_ref: "hetzner.getServersInfo"
 description: "Get Hetzner VM info"
 formats:
-  - display: "ansible-playbook"
+  - display: "hetzner-get-servers-info"
     representation:
       - "ansible-playbook -c local /opt/stackstorm/packs/st2/playbooks/hetzner_get_servers_info.yml -i localhost,"
 result:
