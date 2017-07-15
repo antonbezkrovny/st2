@@ -1,4 +1,3 @@
-# Create a new issue and add a comment to it:
 ---
 - name: Create an issue
   jira:
