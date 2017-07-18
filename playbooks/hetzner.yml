@@ -1,0 +1,18 @@
+---
+# This playbook get all Hetzners server
+- name: Het all Hetzner servers info
+  hosts: localhost
+  tasks:
+  - name: URI request
+    uri:
+     url: https://robot-ws.your-server.de/server
+     method: GET
+     user: "#ws+eiH6X63j"
+     password: "7SPsYZaFvOFEpGkrZnG7"
+     return_content:  yes
+    register: serverslist   
+    
+  - name: "Display all servers with properties"
+    debug: var=item
+    with_items: "{{(serverslist.json)|json_query('[*].server.{server_ip: server_ip, 
+                                                              product: product}')}}"
