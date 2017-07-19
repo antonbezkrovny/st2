@@ -3,12 +3,12 @@ name: "chatops.ansible_playbook"
 action_ref: "ansible.playbook"
 description: "Run Ansible playbook on local machine"
 formats:
-  - display: "ansible <command>"
+  - display: "ansible-playbook>"
     representation:
-      - "ansible-playbook {{ args }}"
+      - "ansible-playbook /optstackstorm/packs/st2/playbooks/hetzner.yml"
 result:
   format: |
-    Ansible command `{{ execution.parameters.args }}` result: {~}
+    Ansible command result: {~}
     {% if execution.result.stderr %}*Stdout:* {% endif %}
     ```{{ execution.result.stdout }}```
     {% if execution.result.stderr %}*Stderr:* ```{{ execution.result.stderr }}```{% endif %}
