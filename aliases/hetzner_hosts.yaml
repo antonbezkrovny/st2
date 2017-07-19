@@ -1,9 +1,9 @@
 ---
 name: chatops.hetzner_hosts
-action_ref: st2.hetzner-hosts
+action_ref: st2.hetzner_hosts
 description: Get Hetzner VM info - CX type and IP
 formats:
-  - display: "hetzner-hosts"
+  - display: "hetzner_hosts"
     representation:
       - "/opt/stackstorm/virtualenvs/ansible/bin/ansible-playbook -c local /opt/stackstorm/packs/st2/playbooks/hetzner.yml -i localhost,"
 result:
