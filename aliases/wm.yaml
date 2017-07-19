@@ -5,7 +5,7 @@ description: "Run Ansible playbook on local machine"
 formats:
   - display: "wm_list"
     representation:
-      - "ansible-playbook /optstackstorm/packs/st2/playbooks/hetzner.yml"
+      - "ansible-playbook /opt/stackstorm/packs/st2/playbooks/hetzner.yml"
 result:
   format: |
     Ansible command result: {~}
