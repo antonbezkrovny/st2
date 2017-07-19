@@ -1,7 +1,7 @@
 ---
-name: "chatops.hetzner-hosts"
-action_ref: "st2.hetzner-hosts"
-description: "Get Hetzner VM info"
+name: chatops.hetzner_hosts
+action_ref: st2.hetzner-hosts
+description: Get Hetzner VM info - CX type and IP
 formats:
   - display: "hetzner-hosts"
     representation:
