@@ -1,5 +1,5 @@
 ---
-name: hetzner-hosts
+name: hetzner_hosts
 description: Get all hosts list from Hetzner
 runner_type: local-shell-cmd
 entry_point: ""
