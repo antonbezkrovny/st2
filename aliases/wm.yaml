@@ -3,7 +3,7 @@ name: "chatops.ansible_playbook"
 action_ref: "ansible.playbook"
 description: "Run Ansible playbook on local machine"
 formats:
-  - display: "ansible-playbook>"
+  - display: "wm_list"
     representation:
       - "ansible-playbook /optstackstorm/packs/st2/playbooks/hetzner.yml"
 result:
